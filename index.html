@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-CA">
 <body>
 <head>
-  <meta charset="utf-8">
-  <title>My personal Profile Design</title>
-<style>  
+    <meta charset="UTF-8">
+    <title>My personal Profile Design</title>
+<style>
   body {
-        margin: 0;
-        padding: 0;
-      	max-width: 1000px;
+  color: white;
+  margin: 0;
   }
-  #section0, #section1, #section2, #section3, #section4 {
-  height: 700px;  
+  #home, #about-me, #hobbies, #contact {
+  height: 780px;  
   }
   
-  #section0 {
-        /* CSS part*/
-    background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f);
-       .header {
+  #home {
+        font-family: Arial, sans-serif;
+        background: white;
+        margin: 0;
+        padding: 0;
+  }
+      /* CSS 规则集 9 */
+    .header {
         position: relative; /* 使标题的定位相对于该容器 */
         height: 300px; /* 设置容器高度 */
         background-color: #f2f2f2; /* 为了看清楚容器的范围 */
@@ -73,6 +76,7 @@
         width: 400px; /* 设置宽度 */
         text-align: justify; /* 对齐文本 */
       	color: #686868;
+       z-index: 2;
     }
     
     a {
@@ -110,8 +114,16 @@
     border-radius: 5px;
     margin: 10px; /* 设置按钮之间的间距 */  
   	float: left;
+  	z-index: 2
   }
 
+  #home-button {
+    position: absolute;
+    margin-top: 630px;
+    margin-left: 850px;
+  	float: left;
+}
+  
 #contact-button {
     position: absolute;
     margin-top: 630px;
@@ -136,36 +148,6 @@
   
   
   /* 图片&模块 */
-  	  .pagerect1 {
-        position: absolute;
-        margin-top: 0;
-        margin-left: 0;
-        width: 800px;
-        height: 700;
-      	background-color: white;
-        z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
-        float: left;
-    }
-   		.pagerect2 {
-        position: absolute;
-        margin-top: 550px;
-        margin-left: 0;
-        width: 1535;
-        height: 235;
-      	background-color: white;
-        z-index: -2; /* 设置堆叠顺序，确保在其他内容的上层 */
-        float: left;
-    }
-  	  .Toprect {
-        position: absolute;
-        margin-top: 50;
-        margin-left: 0;
-        width: 100%;
-        height: 50px;
-        background-color: ; /* 灰色背景 */
-        z-index: -1; /* 设置堆叠顺序，确保在其他内容的上层 */
-        float: left;
-    }
   
   	.image1 {
         position: absolute; 
@@ -182,10 +164,31 @@
         border-left: 3px dashed #614992; /* 定义虚线样式 */
         content: "";
       	float: left;
+        z-index: 2;
   		}
-    
-    /* html content */
-        <header>
+  
+  
+  #about-me {
+    background-color: #423711;
+  }
+  #hobbies {
+    background-color: #bbb5a7;
+  }
+  #contact {
+    background-color: #8b2e25;
+  }
+</style>
+</head>
+  
+
+  
+		<a href="#home" class="section-button" id="home-button">home</a>
+		<a href="#contact" class="section-button" id="contact-button">Contact</a>
+		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
+		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
+
+<div id="home">
+    <header>
     <h1>UI/UX Designer</h1>
     <h2>Hello, I'm</h2>
     <h3>Javek</h3>
@@ -199,61 +202,25 @@
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking and photography.</p>
       
-    <h5 style="float: left; position: absolute; text-align:center; margin-top: 530px; margin-left: 780px; color: purple; z-index: 1; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
+    <h5 style="float: left; position: absolute; text-align:center; margin-top: 550px; margin-left: 780px; color: purple; z-index: 2; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
       "When you stride forward with determination, 
         the radiance of your dreams will guide your way."</h5>
       
-    <img src="me.png" alt="my photo" class="image1" width="765px" height="555">
+    <img src="me.jpg" alt="my photo" class="image1" width="765px" height="530">
     <div class="pagerect"></div>
     <div class="photorect"></div>
     <div class="pagerect1"></div>
     <div class="Toprect"></div>
     <div class="pagerect2"></div>
 		<div class="vertical-dashed-line"></div>
-      
-    <table>
-		<a href="#contact" class="section-button" id="contact-button">Contact</a>
-		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
-		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
-    </table>
-  
-    
-  }
-  #section1 {
-    background-color: #423711;
-  }
-  #section2 {
-    background-color: #bbb5a7;
-  }
-    #section3 {
-    background-color: #8b2e25;
-  }
-    #section4 {
-    background-color: #787254;
-  }
-  
-  
-</style>
-</head>
-<a href="#section1">0</a>
-<a href="#section1">1</a>
-<a href="#section1">2</a>
-<a href="#section1">3</a>
-<a href="#section1">4</a>  
-<h2>
-One-page scroll site template</h2>
-<div id="section0">
 </div>
-<div id="section1">
+<div id="about-me">
 Your amazing content goes here!
 </div>
-<div id="section2">
+<div id="hobbies">
 Your amazing content goes here!
 </div>
-<div id="section3">
-Your amazing content goes here!
-</div>
-<div id="section4">
+<div id="contact">
 Your amazing content goes here!
 </div>
 </body>
