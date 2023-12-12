@@ -67,7 +67,7 @@
       
       
     /* CSS 规则集 3 */
-    p {
+    .paragraph1 {
         font-size: 18px;
         margin-bottom: 10px;
         position: absolute;
@@ -78,7 +78,34 @@
       	color: #686868;
        z-index: 2;
     }
-    
+  
+  	 		.paragraph2 {
+  			float: left; 
+  			position: absolute; 
+  			margin-top: 550px; 
+  			margin-left: 800px; 
+  			color: purple; 
+       	z-index: 2; 
+        text-align: center;
+  			font-size: 26px; 
+  			font-family: "Montserrat", sans-serif; 
+  			width: 700px;
+        font-weight: bold;
+  }
+  
+  	 	 .paragraph3 {
+  			float: left; 
+  			position: absolute; 
+  			margin-top: 615px; 
+  			margin-left: 1360px; 
+  			color: purple; 
+       z-index: 2; 
+  			font-size: 26px; 
+  			font-family: "Montserrat", sans-serif; 
+  			width: 700px;
+        font-weight: bold;
+  }
+  
     a {
         color: blue;
         text-decoration: none;
@@ -119,35 +146,35 @@
 
   #home-button {
     position: absolute;
-    margin-top: 630px;
+    margin-top: 660px;
     margin-left: 850px;
   	float: left;
 }
   
 #contact-button {
     position: absolute;
-    margin-top: 630px;
+    margin-top: 660px;
     margin-left: 1300px;
   	float: left;
 }
 
 #about-me-button {
     position: absolute;
-    margin-top: 630px;
+    margin-top: 660px;
     margin-left: 1150px;
   	float: left;
 }
 
 #hobbies-button {
     position: absolute;
-    margin-top: 630px;
+    margin-top: 660px;
     margin-left: 1000px;
   	float: left;
 }
   
   
   
-  /* 图片&模块 */
+  /* Image & Effects */
   
   	.image1 {
         position: absolute; 
@@ -158,11 +185,11 @@
   
   	.vertical-dashed-line {
         position: absolute;
+    		height: 780px;
         top: 0;
         bottom: 0;
         margin-left: 700; /* 放置在页面中间 */
         border-left: 3px dashed #614992; /* 定义虚线样式 */
-        content: "";
       	float: left;
         z-index: 2;
   		}
@@ -182,7 +209,7 @@
   
 
   
-		<a href="#home" class="section-button" id="home-button">home</a>
+		<a href="#home" class="section-button" id="home-button">Home</a>
 		<a href="#contact" class="section-button" id="contact-button">Contact</a>
 		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
 		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
@@ -195,24 +222,28 @@
     <h4>UW GBDA Student</h4>
     </header>
     
-    <p>"Hello, my name is Javek Liang. I am studying 
+    <p class="paragraph1">"Hello, my name is Javek Liang. I am studying 
       at the University of Waterloo, majoring in Global 
       Business and Digital Arts. I am passionate about 
       user experience and front-end development and enjoy 
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking and photography.</p>
       
-    <h5 style="float: left; position: absolute; text-align:center; margin-top: 550px; margin-left: 780px; color: purple; z-index: 2; font-size: 26px; font-family: 'Montserrat', sans-serif; width: 700px;">
-      "When you stride forward with determination, 
-        the radiance of your dreams will guide your way."</h5>
+		<p class="paragraph2">
+      "Stay resolute in your journey, and everything you aspire for will come to fruition."</p>
+  
+    <p class="paragraph3">
+      - Javek</p>
       
     <img src="me.jpg" alt="my photo" class="image1" width="765px" height="530">
-    <div class="pagerect"></div>
-    <div class="photorect"></div>
-    <div class="pagerect1"></div>
-    <div class="Toprect"></div>
-    <div class="pagerect2"></div>
 		<div class="vertical-dashed-line"></div>
+  
+  <div class="doodle">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
 </div>
 <div id="about-me">
 Your amazing content goes here!
