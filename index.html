@@ -199,13 +199,14 @@
         }
   
   			.hi-title {
-  					font-size: 80px;
+          	text-align: center;
+  					font-size: 60px;
   					color: #4c2889; /* 紫色更深 */
   					position: absolute;
-  					top: 900px; /* 相对于 about-me 页面的位置 */
+  					top: 930px; /* 相对于 about-me 页面的位置 */
   					left: 750px; /* 左侧与 about-me 页面的距离 */
   					z-index: 1;
-  					text-shadow: -5px -5px #e5e5e5;
+  					text-shadow: 5px 5px #e5e5e5;
 }
 
         .about-me-image {
@@ -213,7 +214,7 @@
          margin-top: -210;
          left: 30px;
       	 float: left;
-       	 z-index: 1;
+       	 z-index: 2;
         }
 
         .about-me-title {
@@ -223,7 +224,7 @@
             width: width;
             font-weight: bold;
             margin-top: 50px;
-            text-shadow: -10px -10px #f6f6f7, -12px -12px #e5e5e5;
+            text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
           	z-index: 1;
         }
   
@@ -236,6 +237,7 @@
     				background-color: #8b66e0;
         		z-index: 0;
 }
+  
   		.purple-rectangle1 {
         		position: absolute;
     				width: 650px; /* 可调整宽度 */
@@ -244,6 +246,17 @@
     				margin-left: 865; /* 居中 */
     				background-color: #8b66e0;
         		z-index: 0;
+  }
+  
+    		.opacity-rectangle {
+        		position: absolute;
+    				width: 700px; 
+    				height: 500px; 
+        		margin-top: -450;
+    				margin-left: 30px; 
+    				background-color: #d1c5e5;
+        		z-index: 1;
+            opacity: 90%
   }
           
   		.triangle {
@@ -277,9 +290,69 @@
     }
 
   
+  
+  
   #hobbies {
-    background-color: #bbb5a7;
+    background-color: white;
   }
+  
+    .my-hobbies-title {
+            font-size: 145px;
+            color: #924ed1;
+            width: width;
+            font-weight: bold;
+            margin-top: 50px;
+        		top: 900px; /* 相对于 hobbies 页面的位置 */
+        		margin-left: 750px; /* 左侧与 hobbies 页面的距离 */
+        		z-index: 1;
+        		text-shadow: 10px 10px #e3e3e3, -12px -12px #d8d8d8; /* 右下方向浅紫色阴影 */
+    }
+  
+      .hobbies {
+        text-align: center;
+        margin-top: 50px;
+        color: black;
+    }
+
+    .hobby-1,
+    .hobby-2 {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .hobby-image {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      	z-index: 1;
+    }
+
+    .hobby-description {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+  	
+  	  .p3-rectangle {
+        		position: absolute;
+    				width: 380px; /* 可调整宽度 */
+    				height: 550px; /* 可调整高度 */
+        		margin-top: -500;
+    				left: 110px;
+    				background-color: #8b66e0;
+        		z-index: 0;
+}
+  
+  		.p3-rectangle1 {
+        		position: absolute;
+    				width: 400px; /* 可调整宽度 */
+    				height: 550px; /* 可调整高度 */
+        		margin-top: -210;
+    				margin-left: 1005; /* 居中 */
+    				background-color: #8b66e0;
+        		z-index: 0;
+  }
+  
+  
+  
   #contact {
     background-color: #8b2e25;
   }
@@ -322,7 +395,7 @@
 
 <div id="about-me">
         <p class="about-me-title">About Me</p>
-				<h1 class="hi-title">Hi！ it's me again<br> ヾ( ^３^ )╱~~⭐</h1>
+				<h1 class="hi-title">Hi!ヾ( ^３^ )╱~~⭐ <br> you want to know more?</h1>
         <!-- 在这里添加关于 About Me 页面的内容 -->
         <p class="about-me-content">
             "I'm Javek Liang, 
@@ -339,8 +412,7 @@
         </div>
     <div class="purple-rectangle"></div>
     <div class="purple-rectangle1"></div>
-    <div class="purple-rectangle2"></div>
-    <div class="purple-rectangle3"></div>
+    <div class="opacity-rectangle"></div>
     
   
     <div class="triangle"></div>
@@ -350,8 +422,26 @@
   
   
 <div id="hobbies">
-Your amazing content goes here!
+  <div class="my-hobbies-title"> My Hobbies</div>
+    <div class="hobby-1">
+        <!-- 第一个图形 -->
+        <img src="hobby1.jpg" alt="Your Hobby 1" class="hobby-image" width="300px" height="200px">
+        <!-- 第一个文字内容 -->
+        <p class="hobby-description">Description of Hobby 1</p>
+    </div>
+    
+    <div class="hobby-2">
+        <!-- 第二个图形 -->
+        <img src="hobby2.jpg" alt="Your Hobby 2" class="hobby-image" width="300px" height="200px">
+        <!-- 第二个文字内容 -->
+        <p class="hobby-description">Description of Hobby 2</p>
+    </div>
+  
+      <div class="p3-rectangle"></div>
+      <div class="p3-rectangle1"></div>
 </div>
+  
+
 <div id="contact">
 Your amazing content goes here!
 </div>
