@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+为什么我的pagetitle没有作用：<!DOCTYPE html>
 <html lang="en-CA">
 <body>
 <head>
@@ -8,10 +8,11 @@
   body {
   color: white;
   margin: 0;
+  width: 100%
   }
   #home, #about-me, #hobbies, #contact {
-  height: 780px;  
-  width: 100%
+  height: 800px;  
+  width: 1515
   }
   
   #home {
@@ -31,7 +32,6 @@
         font-size: 30px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
         top: 130px; /* 距离容器顶部50px */
-        right: auto; /* 距离容器右侧20px */
         margin-left: 125px; /* 将左侧设置为自动 */
       	color: #9353e2;
       	z-index: 2
@@ -40,8 +40,7 @@
     h2 {
         font-size: 80px;
         position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 120px; /* 距离容器顶部50px */
-        right: auto; /* 距离容器右侧20px */
+        top: 120px; /* 距离容器顶部50px */ 
         margin-left: 150px; /* 将左侧设置为自动 */
       	color: black;
       	z-index: 2
@@ -49,45 +48,42 @@
   
     h3 {
         font-size: 100px;
-        position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 150px; /* 距离容器顶部50px */
-        right: auto; /* 距离容器右侧20px */
-        margin-left: 150px; /* 将左侧设置为自动 */
+        position: absolute; 
+        top: 150px;
+        right: auto; 
+        margin-left: 150px; 
       	color: #f16745;
       	z-index: 2
   }
     h4 {
         font-size: 50px;
-        position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 280px; /* 距离容器顶部50px */
-        right: auto; /* 距离容器右侧20px */
-        margin-left: 150px; /* 将左侧设置为自动 */
+        position: absolute; 
+        top: 280px; 
+        right: auto; 
+        margin-left: 150px; 
       	color: black;
       	z-index: 2
   }
   
   	h5 {
  				font-size: 145px;
-        position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 120px; /* 距离容器顶部50px */ 
-        margin-left: 760px; /* 将左侧设置为自动 */
+        position: absolute; 
+        top: 120px;  
+        margin-left: 760px; 
       	color: #9353e2;
       	z-index: 2;
-        text-shadow: 
-    		-10px -10px #f6f6f7,
-        -12px -12px #e5e5e5;
+        text-shadow: -10px -10px #f6f6f7, -12px -12px #e5e5e5;
   }
       
       
-    /* CSS 规则集 3 */
-    .paragraph1 {
+    		.paragraph1 {
         font-size: 18px;
         margin-bottom: 10px;
         position: absolute;
-        top: 400px; /* 调整 p 元素在 h4 底下的位置 */
+        top: 400px; 
         margin-left: 150;
-        width: 400px; /* 设置宽度 */
-        text-align: justify; /* 对齐文本 */
+        width: 400px; 
+        text-align: justify;
       	color: #686868;
        z-index: 2;
     }
@@ -112,32 +108,14 @@
   			margin-top: 615px; 
   			margin-left: 1360px; 
   			color: purple; 
-       z-index: 2; 
+       	z-index: 2; 
   			font-size: 26px; 
   			font-family: "Montserrat", sans-serif; 
-  			width: 700px;
         font-weight: bold;
   }
-  
-    a {
-        color: blue;
-        text-decoration: none;
-    }
-    
+
     a:hover {
         text-decoration: underline;
-    }
-    
-    
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
-
-    
-    table, th, td {
-        border: 1px solid #000;
-        padding: 8px;
     }
   
 
@@ -152,7 +130,7 @@
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin: 10px; /* 设置按钮之间的间距 */  
+    margin: 10px; 
   	float: left;
   	z-index: 2
   }
@@ -188,29 +166,49 @@
   
   
   /* Image & Effects */
-  
   	.image1 {
         position: absolute; 
         top: 0; 
-        margin-left: 770;
+        margin-left: 753.5;
       	float: left;
     }
   
   	.vertical-dashed-line {
         position: absolute;
-    		height: 780px;
+    		height: 800px;
         top: 0;
         bottom: 0;
-        margin-left: 700; /* 放置在页面中间 */
-        border-left: 3px dashed #614992; /* 定义虚线样式 */
+        margin-left: 700; 
+        border-left: 3px dashed #614992; 
       	float: left;
         z-index: 2;
   		}
   
   
   #about-me {
-    background-color: #423711;
+	background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f);;
   }
+    
+  .pageTitle {
+  			float: left; 
+  			position: absolute; 
+  			margin-top: 1000px; 
+  			margin-left: 800px; 
+  			color: #924ed1; 
+       	z-index: 2; 
+  			font-size: 145px; 
+  			width: 700px;
+        font-weight: bold;
+  }
+  
+  .rectangle {
+    position: absolute;
+    top: 840px; 
+    width: 1435px; 
+    height: 720; 
+    background-color: white;
+  }
+  
   #hobbies {
     background-color: #bbb5a7;
   }
@@ -219,9 +217,6 @@
   }
 </style>
 </head>
-  
-
-  
 		<a href="#home" class="section-button" id="home-button">Home</a>
 		<a href="#contact" class="section-button" id="contact-button">Contact</a>
 		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
@@ -242,27 +237,28 @@
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking and photography.</p>
       
-  	<h5>WELCOME</h5>
+    <h5>WELCOME</h5>
   
 		<p class="paragraph2">
-      "Stay resolute in your journey, and everything you aspire for will come to fruition."</p>
+      "Stay resolute in your journey, and everything you 
+      aspire for will come to fruition."</p>
   
     <p class="paragraph3">
       - Javek</p>
       
     <img src="me.jpg" alt="my photo" class="image1" width="765px" height="530">
 		<div class="vertical-dashed-line"></div>
+</div>
   
-  <div class="doodle">
-  <div class="line"></div>
-  <div class="line"></div>
-  <div class="line"></div>
-</div>
+  
 
-</div>
 <div id="about-me">
-Your amazing content goes here!
+  <div class="rectangle"></div>
+      <p class="pageTitle">
+      "Hi"</p>
 </div>
+  
+  
 <div id="hobbies">
 Your amazing content goes here!
 </div>
