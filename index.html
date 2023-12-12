@@ -1,4 +1,4 @@
-为什么我的pagetitle没有作用：<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-CA">
 <body>
 <head>
@@ -184,30 +184,78 @@
         z-index: 2;
   		}
   
-  
-  #about-me {
-	background: linear-gradient(-45deg, #1b167f, #544ed1, #924ed1, #1b167f);;
-  }
-    
-  .pageTitle {
-  			float: left; 
-  			position: absolute; 
-  			margin-top: 1000px; 
-  			margin-left: 800px; 
-  			color: #924ed1; 
-       	z-index: 2; 
-  			font-size: 145px; 
-  			width: 700px;
-        font-weight: bold;
+    #about-me {
+	background: white;
   }
   
-  .rectangle {
-    position: absolute;
-    top: 840px; 
-    width: 1435px; 
-    height: 720; 
-    background-color: white;
+        .about-me-content {
+            font-size: 30px;
+          	margin-left: 900;
+            max-width: 500;
+            color: black;
+          	z-index: 1;
+        }
+  
+  			.hi-title {
+  					font-size: 100px;
+  					color: #4c2889; /* 紫色更深 */
+  					position: absolute;
+  					top: 250px; /* 相对于 about-me 页面的位置 */
+  					left: 50px; /* 左侧与 about-me 页面的距离 */
+  					z-index: 1;
+  					text-shadow: -5px -5px #e5e5e5;
+}
+
+        .about-me-image {
+       	 position: absolute; 
+         margin-top: -200;
+         left: 30px;
+      	 float: left;
+       	 z-index: 1;
+        }
+
+        .about-me-title {
+            font-size: 145px;
+          	left: 50px;
+            color: #924ed1;
+            width: width;
+            font-weight: bold;
+            margin-top: 50px;
+            text-shadow: -10px -10px #f6f6f7, -12px -12px #e5e5e5;
+          	z-index: 1;
+        }
+  
+  		.purple-rectangle {
+        		position: absolute;
+    				width: 43%; /* 可调整宽度 */
+    				height: 150px; /* 可调整高度 */
+        		margin-top: -450;
+    				left: 0; /* 居中 */
+    				background-color: #8b66e0;
+        		z-index: 0;
+}
+  		.purple-rectangle1 {
+        		position: absolute;
+    				width: 40%; /* 可调整宽度 */
+    				height: 150px; /* 可调整高度 */
+        		margin-top: -10;
+    				right: 83; /* 居中 */
+    				background-color: #8b66e0;
+        		z-index: 0;
   }
+  
+  		.triangle {
+  		position: absolute;
+  		width: 300px; /* 加上单位 */
+  		height: 100px; /* 加上单位 */
+ 			border-left: 150px solid transparent;
+  		border-right: 150px solid transparent;
+  		border-top: 100px solid #8b66e0; 
+  		z-index: 0;
+  		top: 800;
+  		right: 100;
+    }
+
   
   #hobbies {
     background-color: #bbb5a7;
@@ -253,9 +301,20 @@
   
 
 <div id="about-me">
-  <div class="rectangle"></div>
-      <p class="pageTitle">
-      "Hi"</p>
+        <p class="about-me-title">About Me</p>
+
+        <!-- 在这里添加关于 About Me 页面的内容 -->
+        <p class="about-me-content">
+                "Hello, my name is Javek Liang. I am studying at the University of Waterloo, majoring in Global Business and Digital Arts. I am passionate about user experience and front-end development and enjoy exploring new technologies. In my spare time, I enjoy reading, painting, outdoor hiking, and photography."
+        </p>
+
+        <!-- 新的图片区域 -->
+        <div class="about-me-image">
+            <img src="about me.jpg" alt="Your Image" class="about-me-image" width="700px" height="500">
+        </div>
+  <div class="purple-rectangle"></div>
+  <div class="purple-rectangle1"></div>
+    <div class="triangle"></div>
 </div>
   
   
