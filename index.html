@@ -23,16 +23,16 @@
   }
       /* CSS 规则集 9 */
     .header {
-        position: relative; /* 使标题的定位相对于该容器 */
-        height: 300px; /* 设置容器高度 */
-        background-color: #f2f2f2; /* 为了看清楚容器的范围 */
+        position: relative; 
+        height: 300px;
+        background-color: #f2f2f2;
     }
     
     h1 {
         font-size: 30px;
-        position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 130px; /* 距离容器顶部50px */
-        margin-left: 125px; /* 将左侧设置为自动 */
+        position: absolute; 
+        top: 130px;
+        margin-left: 125px;
       	color: #9353e2;
       	z-index: 2
   }
@@ -297,17 +297,42 @@
   }
   
     .my-hobbies-title {
-            font-size: 145px;
+            position: absolute;
+      		  transform: rotate(-90deg);
+            transform-origin: left top;
+            white-space: nowrap;
+            font-size: 135px;
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 50px;
-        		top: 900px; /* 相对于 hobbies 页面的位置 */
-        		margin-left: 750px; /* 左侧与 hobbies 页面的距离 */
+            margin-top: 1000px;
+        		top: 1400px; /* 相对于 hobbies 页面的位置 */
+        		margin-left: 700px; /* 左侧与 hobbies 页面的距离 */
         		z-index: 1;
         		text-shadow: 10px 10px #e3e3e3, -12px -12px #d8d8d8; /* 右下方向浅紫色阴影 */
     }
   
+  
+  	  .hobby-title-below {
+      position: absolute;
+      font-size: 105px; /* 较小文字大小 */
+      color: white;
+      z-index: 1;
+      text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
+      margin-top: 480px; /* 在左边图片上方 */
+      left: 900px; /* 左侧与 hobbies 页面的距离 */
+    }
+  
+      .hobby-title-above {
+      font-size: 105px; /* 较小文字大小 */
+      color: white;
+      position: absolute;
+      z-index: 1;
+      text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
+      margin-top: 100px;
+      left: 180px;
+  }
+        
       .hobbies {
         text-align: center;
         margin-top: 50px;
@@ -325,24 +350,18 @@
   
   	 .hobby-image2 {
        	position: absolute;
-        margin-top: 0px;
+        margin-top: 280px;
         margin-left: 85px;
 				box-shadow: 0 0 0 6px white, 0 0 0 20px #924ed1;
       	z-index: 1;
-    }
-
-    .hobby-description {
-        font-size: 20px;
-        margin-top: 10px;
-      	
     }
   	
   	  .p3-rectangle {
           	position: absolute;
     				width: 380px; /* 可调整宽度 */
     				height: 600px; /* 可调整高度 */
-        		margin-top: -295;
-    				margin-left: 150px;
+        		margin-top: 25;
+    				margin-left: 130px;
     				background-color: #8b66e0;
         		z-index: 0;
 }
@@ -351,7 +370,7 @@
         		position: absolute;
     				width: 400px; /* 可调整宽度 */
     				height: 550px; /* 可调整高度 */
-        		margin-top: -15;
+        		margin-top: 83;
     				margin-left: 1005; /* 居中 */
     				background-color: #8b66e0;
         		z-index: 0;
@@ -402,7 +421,6 @@
 <div id="about-me">
         <p class="about-me-title">About Me</p>
 				<h1 class="hi-title">Hi!ヾ( ^３^ )╱~~⭐ <br> you want to know more?</h1>
-        <!-- 在这里添加关于 About Me 页面的内容 -->
         <p class="about-me-content">
             "I'm Javek Liang, 
           a young boy born in Beijing, China! Currently, 
@@ -412,7 +430,6 @@
           I completing my middle school and high school education locally. Now, 
           I'm enrolled in the faculty of Arts at the University of Waterloo!"
           </p>
-        <!-- 新的图片区域 -->
         <div class="about-me-image">
             <img src="about me.jpg" alt="Your Image" class="about-me-image" width="700px" height="500">
         </div>
@@ -429,16 +446,10 @@
   
 <div id="hobbies">
   <div class="my-hobbies-title"> My Hobbies</div>
-        <!-- 第一个图形 -->
+        <div class="hobby-title hobby-title-above"> Photography</div>
+        <div class="hobby-title hobby-title-below"> Camping</div>
         <img src="Camping.jpg" alt="Your Hobby 1" class="hobby-image" width="500px" height="300px" >
-        <!-- 第一个文字内容 -->
-        <p class="hobby-description">Description of Hobby 1</p>
-    
-        <!-- 第二个图形 -->
         <img src="photography.jpg" alt="Your Hobby 2" class="hobby-image2" width="500px" height="300px">
-        <!-- 第二个文字内容 -->
-        <p class="hobby-description">Description of Hobby 2</p>
-  
       <div class="p3-rectangle"></div>
       <div class="p3-rectangle1"></div>
 </div>
