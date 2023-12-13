@@ -16,13 +16,15 @@
   width: 1515px;
   }
   
+  
+   /* Home Page */
   #home {
         font-family: Arial, sans-serif;
         background: white;
         margin: 0;
         padding: 0;
   }
-      /* CSS 规则集 9 */
+ 
     .header {
         position: relative; 
         height: 300px;
@@ -40,9 +42,9 @@
   	    
     h2 {
         font-size: 80px;
-        position: absolute; /* 将标题的定位设置为绝对定位 */
-        top: 120px; /* 距离容器顶部50px */ 
-        margin-left: 150px; /* 将左侧设置为自动 */
+        position: absolute;
+        top: 120px; 
+        margin-left: 150px; 
       	color: black;
       	z-index: 2
   }
@@ -185,6 +187,8 @@
         z-index: 2;
   		}
   
+  
+    /* About Me Page */
     #about-me {
 	background: white;
   }
@@ -201,11 +205,11 @@
   
   			.hi-title {
           	text-align: center;
-  					font-size: 60px;
-  					color: #4c2889; /* 紫色更深 */
+  					font-size: 53px;
+  					color: #4c2889; 
   					position: absolute;
-  					top: 930px; /* 相对于 about-me 页面的位置 */
-  					left: 750px; /* 左侧与 about-me 页面的距离 */
+  					top: 930px; 
+  					left: 740px; 
   					z-index: 1;
   					text-shadow: 5px 5px #e5e5e5;
 }
@@ -231,8 +235,8 @@
   
   		.purple-rectangle {
         		position: absolute;
-    				width: 630px; /* 可调整宽度 */
-    				height: 150px; /* 可调整高度 */
+    				width: 630px; 
+    				height: 150px; 
         		margin-top: -500;
     				left: 0;
     				background-color: #8b66e0;
@@ -241,15 +245,15 @@
   
   		.purple-rectangle1 {
         		position: absolute;
-    				width: 650px; /* 可调整宽度 */
-    				height: 150px; /* 可调整高度 */
+    				width: 650px;
+    				height: 90px; 
         		margin-top: -10;
-    				margin-left: 865; /* 居中 */
+    				margin-left: 865; 
     				background-color: #8b66e0;
         		z-index: 0;
   }
   
-    		.opacity-rectangle {
+    	 .opacity-rectangle {
         		position: absolute;
     				width: 700px; 
     				height: 500px; 
@@ -292,7 +296,7 @@
 
   
   
-  
+    /* Interest Page */
   #hobbies {
     background-color: white;
   }
@@ -316,20 +320,20 @@
   
   	  .hobby-title-below {
       position: absolute;
-      font-size: 105px; /* 较小文字大小 */
+      font-size: 105px; 
       color: white;
       z-index: 2;
-      text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
-      margin-top: 460px; /* 在左边图片上方 */
-      left: 900px; /* 左侧与 hobbies 页面的距离 */
+      text-shadow: 0px 0px 15px #924ed1; 
+      margin-top: 460px; 
+      left: 900px; 
     }
   
       .hobby-title-above {
-      font-size: 105px; /* 较小文字大小 */
+      font-size: 105px; 
       color: white;
       position: absolute;
       z-index: 2;
-      text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
+      text-shadow: 0px 0px 15px #924ed1; 
       margin-top: 170px;
       left: 150px;
   }
@@ -420,7 +424,7 @@
     }
   
   
-  
+    /* Contact Page */
   #contact {
     background-color: white;
   }
@@ -430,21 +434,21 @@
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 50px;
+            margin-top: 10px;
             text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
           	z-index: 1;
         }
       
         .contact-table {
-            position: absolute;
-            width: 1350px;
-            height: 500px;
-            margin: 100;
-            margin-top: 30px; 
-            font-size: 30px;
-            text-align: center;
-            color: #924ed1;
-            z-index: 2;
+    				position: absolute;
+    				width: 1350px;
+    				height: 600px;
+    				margin: 70px;
+    				margin-top: 150px; 
+    				font-size: 30px;
+    				text-align: center;
+    				color: #924ed1;
+    				z-index: 2;
         }
 
   			.emoji {
@@ -463,11 +467,22 @@
   					font-size: 30px;
   					color: black; 
   					position: absolute;
-  					margin-top: 0px; 
+  					margin-top: 20px; 
   					left: 100px; 
             width: 1300px;
   					z-index: 1;
 }
+  
+      .horizontal-dashed-line2 {
+      width: 1350; 
+      height: 3px; 
+      border-top: 13px dashed #924ed1; 
+      position: absolute;
+      margin-left: 0;
+      margin-top: 450px; 
+      z-index: 1;
+    }
+  
         table {
             width: 100%;
             height: 60%;
@@ -532,7 +547,7 @@
 
 <div id="about-me">
         <p class="about-me-title">About Me</p>
-				<h1 class="hi-title">Hi!ヾ( ^３^ )╱~~⭐ <br> you want to know more?</h1>
+				<h1 class="hi-title">Hi!ヾ( ^３^ )╱~~⭐ <br> you want to <span style="color: orange;">Know</span> me more?</h1>
         <p class="about-me-content">
             "Well, I'm Javek Liang, 
           a young boy born in Beijing, China! Currently, 
@@ -576,8 +591,9 @@
 <div id="contact">
     <div class="contact-title">Contact Me</div>
 						<p class="emoji">٩(๑^o^๑)۶</p>
-		<p class="text">If you are interested in making friends or connecting with me, the following are the social media or platforms I often use"</p>
+		<p class="text">If you are interested in making friends or connecting with me, the following are the social media or platforms I often use.</p>
     <div class="contact-table">
+    <div class="horizontal-dashed-line2"></div>
         <table>
             <thead>
                 <tr>
