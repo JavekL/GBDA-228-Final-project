@@ -301,11 +301,11 @@
       		  transform: rotate(-90deg);
             transform-origin: left top;
             white-space: nowrap;
-            font-size: 135px;
+            font-size: 130px;
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 950px;
+            margin-top: 960px;
         		top: 1400px; /* 相对于 hobbies 页面的位置 */
         		margin-left: 700px; /* 左侧与 hobbies 页面的距离 */
         		z-index: 1;
@@ -408,7 +408,7 @@
       z-index: 1;
     }
   
-        .horizontal-dashed-line1 {
+      .horizontal-dashed-line1 {
       width: 550; 
       height: 3px; 
       border-top: 13px dashed #924ed1; 
@@ -421,8 +421,57 @@
   
   
   #contact {
-    background-color: #8b2e25;
+    background-color: white;
   }
+          .contact-title {
+            font-size: 135px;
+          	left: 50px;
+            color: #924ed1;
+            width: width;
+            font-weight: bold;
+            margin-top: 0px;
+            text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
+          	z-index: 1;
+        }
+      
+        .contact-table {
+            position: absolute;
+            width: 1350px;
+            height: 800px;
+            margin: 100;
+            margin-top: 30px; 
+            font-size: 30px;
+            text-align: center;
+            color: #924ed1;
+            z-index: 2;
+        }
+
+
+        table {
+            width: 100%;
+            height: 60%;
+            border-collapse: collapse;
+            border: 3px solid #924ed1;
+          	
+        }
+
+        th, td {
+            border: 2px solid #924ed1; 
+            padding: 10px;
+            color: #686868; 
+        }
+
+        th {
+            background-color: #f6f6f7; 
+        }
+  
+        th.platform-app {
+            background-color: #d8b3e5;
+        }
+  
+  
+  
+  
 </style>
 </head>
 		<a href="#home" class="section-button" id="home-button">Home</a>
@@ -439,8 +488,8 @@
     </header>
     
     <p class="paragraph1">"Hello, my name is Javek Liang. I am studying 
-      at the University of Waterloo, majoring in Global 
-      Business and Digital Arts. I am passionate about 
+      at the University of Waterloo, majoring in 
+      <a href="https://uwaterloo.ca/future-students/programs/global-business-and-digital-arts" target="_blank" title="Get to know GBDA">Global Business and Digital Arts</a>. I am passionate about 
       user experience and front-end development and enjoy 
       exploring new technologies. In my spare time, I enjoy 
       reading, painting, outdoor hiking, camping and photography.</p>
@@ -470,7 +519,7 @@
           business, media, programming, and digital culture. 
           I grew up in China and moved to Canada alone at the age of 12, then
           I completing my middle school and high school education locally. Now, 
-          I'm enrolled in the faculty of Arts at the University of Waterloo!"
+          I'm enrolled in the faculty of Arts at <a href="https://en.wikipedia.org/wiki/University_of_Waterloo" target="_blank" title="Get to know the University of Waterloo">University of Waterloo</a>!"
           </p>
         <div class="about-me-image">
             <img src="about me.jpg" alt="Your Image" class="about-me-image" width="700px" height="500">
@@ -504,7 +553,43 @@
   
 
 <div id="contact">
-Your amazing content goes here!
+    <div class="contact-title">Contact Me</div>
+
+    <!-- 新增居中的表格 -->
+    <div class="contact-table">
+        <table>
+            <thead>
+                <tr>
+                        <th class="platform-app">Platform/App</th>
+                        <th class="platform-app">My Account/ID</th>
+                        <th class="platform-app">Usage</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wechat</td>
+                    <td>JavekL</td>
+                    <td>Communication</td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>Javek_611</td>
+                    <td>Photo Sharing</td>
+                </tr>
+                <tr>
+                    <td>Discord</td>
+                    <td>javekl</td>
+                    <td>Gaming/Community/Study</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>Javek0611@gmail.com</td>
+                    <td>Communication</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
 </body>
 </html>
