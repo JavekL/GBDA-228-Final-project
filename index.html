@@ -10,9 +10,10 @@
   margin: 0;
   width: 100%
   }
+  
   #home, #about-me, #hobbies, #contact {
   height: 800px;  
-  width: 1515
+  width: 1515px;
   }
   
   #home {
@@ -224,7 +225,7 @@
             width: width;
             font-weight: bold;
             margin-top: 0px;
-            text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
+            text-shadow: 10px 10px #e3e3e3, -12px -12px #d8d8d8; 
           	z-index: 1;
         }
   
@@ -306,10 +307,10 @@
             width: width;
             font-weight: bold;
             margin-top: 960px;
-        		top: 1400px; /* 相对于 hobbies 页面的位置 */
-        		margin-left: 700px; /* 左侧与 hobbies 页面的距离 */
+        		top: 1400px; 
+        		margin-left: 700px; 
         		z-index: 1;
-        		text-shadow: 10px 10px #e3e3e3, -12px -12px #d8d8d8; /* 右下方向浅紫色阴影 */
+        		text-shadow: 10px 10px #e3e3e3, -12px -12px #d8d8d8; 
     }
   
   
@@ -429,7 +430,7 @@
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 0px;
+            margin-top: 50px;
             text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
           	z-index: 1;
         }
@@ -437,7 +438,7 @@
         .contact-table {
             position: absolute;
             width: 1350px;
-            height: 800px;
+            height: 500px;
             margin: 100;
             margin-top: 30px; 
             font-size: 30px;
@@ -446,7 +447,27 @@
             z-index: 2;
         }
 
-
+  			.emoji {
+            transform: rotate(20deg);
+          	text-align: center;
+  					font-size: 70px;
+  					color: #4c2889; 
+  					position: absolute;
+  					margin-top: -100px; 
+  					left: 1100px; 
+          	font-weight: bold;
+  					z-index: 1;
+}
+  
+    			.text {
+  					font-size: 30px;
+  					color: black; 
+  					position: absolute;
+  					margin-top: 0px; 
+  					left: 100px; 
+            width: 1300px;
+  					z-index: 1;
+}
         table {
             width: 100%;
             height: 60%;
@@ -554,8 +575,8 @@
 
 <div id="contact">
     <div class="contact-title">Contact Me</div>
-
-    <!-- 新增居中的表格 -->
+						<p class="emoji">٩(๑^o^๑)۶</p>
+		<p class="text">If you are interested in making friends or connecting with me, the following are the social media or platforms I often use"</p>
     <div class="contact-table">
         <table>
             <thead>
