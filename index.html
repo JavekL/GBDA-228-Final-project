@@ -223,7 +223,7 @@
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 50px;
+            margin-top: 0px;
             text-shadow: 10px 10px #f6f6f7, -12px -12px #e5e5e5;
           	z-index: 1;
         }
@@ -305,7 +305,7 @@
             color: #924ed1;
             width: width;
             font-weight: bold;
-            margin-top: 1000px;
+            margin-top: 950px;
         		top: 1400px; /* 相对于 hobbies 页面的位置 */
         		margin-left: 700px; /* 左侧与 hobbies 页面的距离 */
         		z-index: 1;
@@ -317,9 +317,9 @@
       position: absolute;
       font-size: 105px; /* 较小文字大小 */
       color: white;
-      z-index: 1;
+      z-index: 2;
       text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
-      margin-top: 480px; /* 在左边图片上方 */
+      margin-top: 460px; /* 在左边图片上方 */
       left: 900px; /* 左侧与 hobbies 页面的距离 */
     }
   
@@ -327,10 +327,10 @@
       font-size: 105px; /* 较小文字大小 */
       color: white;
       position: absolute;
-      z-index: 1;
+      z-index: 2;
       text-shadow: 0px 0px 15px #924ed1; /* 深紫色的阴影 */
-      margin-top: 100px;
-      left: 180px;
+      margin-top: 170px;
+      left: 150px;
   }
         
       .hobbies {
@@ -345,25 +345,36 @@
         margin-top: 125px; 
       	margin-left: 950px;
 				box-shadow: 0 0 0 6px white, 0 0 0 20px #924ed1;
-      	z-index: 1;
+      	z-index: 2;
     }
   
   	 .hobby-image2 {
        	position: absolute;
-        margin-top: 280px;
-        margin-left: 85px;
+        margin-top: 350px;
+        margin-left: 75px;
 				box-shadow: 0 0 0 6px white, 0 0 0 20px #924ed1;
-      	z-index: 1;
+      	z-index: 2;
     }
   	
   	  .p3-rectangle {
           	position: absolute;
-    				width: 380px; /* 可调整宽度 */
-    				height: 600px; /* 可调整高度 */
-        		margin-top: 25;
+    				width: 400px; /* 可调整宽度 */
+    				height: 550px; /* 可调整高度 */
+        		margin-top: 145;
     				margin-left: 130px;
     				background-color: #8b66e0;
         		z-index: 0;
+}
+  
+  		.p3-rectangle-opacity{
+          	position: absolute;
+    				width: 400px; /* 可调整宽度 */
+    				height: 550px; /* 可调整高度 */
+        		margin-top: 175;
+    				margin-left: 100px;
+    				background-color: #d1c5e5;
+        		z-index: 1;
+        		opacity: 90%
 }
   
   		.p3-rectangle1 {
@@ -376,6 +387,37 @@
         		z-index: 0;
   }
   
+  		.p3-rectangle-opacity1{
+        		position: absolute;
+    				width: 400px; /* 可调整宽度 */
+    				height: 550px; /* 可调整高度 */
+        		margin-top: 53;
+    				margin-left: 1035; /* 居中 */
+    				background-color: #d1c5e5;
+        		z-index: 1;
+        		opacity: 90%
+}
+  
+      .horizontal-dashed-line {
+      width: 550; 
+      height: 3px; 
+      border-top: 13px dashed #924ed1; 
+      position: absolute;
+      margin-left: 50;
+      margin-top: 70px; 
+      z-index: 1;
+    }
+  
+        .horizontal-dashed-line1 {
+      width: 550; 
+      height: 3px; 
+      border-top: 13px dashed #924ed1; 
+      position: absolute;
+      margin-left: 940;
+      margin-top: 700px; 
+      z-index: 1;
+    }
+  
   
   
   #contact {
@@ -386,7 +428,7 @@
 		<a href="#home" class="section-button" id="home-button">Home</a>
 		<a href="#contact" class="section-button" id="contact-button">Contact</a>
 		<a href="#about-me" class="section-button" id="about-me-button">About Me</a>
-		<a href="#hobbies" class="section-button" id="hobbies-button">Hobbies</a>
+		<a href="#hobbies" class="section-button" id="hobbies-button">Interest</a>
 
 <div id="home">
     <header>
@@ -401,7 +443,7 @@
       Business and Digital Arts. I am passionate about 
       user experience and front-end development and enjoy 
       exploring new technologies. In my spare time, I enjoy 
-      reading, painting, outdoor hiking and photography.</p>
+      reading, painting, outdoor hiking, camping and photography.</p>
       
     <h5>WELCOME</h5>
   
@@ -422,7 +464,7 @@
         <p class="about-me-title">About Me</p>
 				<h1 class="hi-title">Hi!ヾ( ^３^ )╱~~⭐ <br> you want to know more?</h1>
         <p class="about-me-content">
-            "I'm Javek Liang, 
+            "Well, I'm Javek Liang, 
           a young boy born in Beijing, China! Currently, 
           I'm studying disciplines related to graphic design, 
           business, media, programming, and digital culture. 
@@ -445,13 +487,19 @@
   
   
 <div id="hobbies">
-  <div class="my-hobbies-title"> My Hobbies</div>
+  <div class="my-hobbies-title"> My Interests</div>
         <div class="hobby-title hobby-title-above"> Photography</div>
         <div class="hobby-title hobby-title-below"> Camping</div>
         <img src="Camping.jpg" alt="Your Hobby 1" class="hobby-image" width="500px" height="300px" >
         <img src="photography.jpg" alt="Your Hobby 2" class="hobby-image2" width="500px" height="300px">
       <div class="p3-rectangle"></div>
+      <div class="p3-rectangle-opacity"></div>
       <div class="p3-rectangle1"></div>
+      <div class="p3-rectangle-opacity1"></div>
+  
+      <div class="horizontal-dashed-line"></div>
+      <div class="horizontal-dashed-line1"></div>
+  
 </div>
   
 
